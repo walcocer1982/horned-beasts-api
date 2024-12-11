@@ -13,6 +13,11 @@ app.get("/test", (req, res) => {
         timestamp: 1730258872,
     });
 });
+app.get("/enter", (req, res)=>{
+    res.send("Hola Walther")
+}
+
+)
 app.listen(port, () => {
     console.log(`Listening on port: ${port}`);
 });
