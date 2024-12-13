@@ -1,0 +1,30 @@
+[
+    {
+       "id": 1,
+       "title": "UniWhal",
+       "description": "A unicorn and a narwhal nuzzling their horns together",
+       "image_url": "http://3.bp.blogspot.com/_DBYF1AdFaHw/TE-f0cDQ24I/AAAAAAAACZg/l-FdTZ6M7z8/s1600/Unicorn_and_Narwhal_by_dinglehopper.jpg",
+       "horns": 1
+    },
+    {
+       "id": 2,
+       "title": "Rhino Family",
+       "description": "Mother rhino with two babies",
+       "image_url": "https://images.unsplash.com/photo-1512636618879-bbe79107e9e3",
+       "horns": 2
+    },
+    {
+       "id": 3,
+       "title": "Triceratops",
+       "description": "A dinosaur with three horns and a large frill",
+       "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Triceratops_JWE.png",
+       "horns": 3
+    },
+    {
+       "id": 4,
+       "title": "Mystic Deer",
+       "description": "A magical deer with four golden horns",
+       "image_url": "https://images.unsplash.com/photo-1484406566174-9da000fda645",
+       "horns": 4
+    }
+    ]

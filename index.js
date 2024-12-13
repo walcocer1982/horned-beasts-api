@@ -1,23 +1,15 @@
 import express from "express";
-import dotenv from "dotenv";
-dotenv.config();
-const app = express();
-const port = process.env.PORT || 3001;
-app.get("/", (req, res) => {
-    res.send("Horned Beasts API de Walther");
-});
-app.get("/test", (req, res) => {
-    res.json({
-        name: "Walther",
-        date: "2024-10-28",
-        timestamp: 1730258872,
-    });
-});
-app.get("/enter", (req, res)=>{
-    res.send("Hola Walther")
-}
+import dotenv from "dotenv/config";
+import beastsRouter from "./routes/beasts.js";
+import morgan from "morgan";
 
-)
-app.listen(port, () => {
-    console.log(`Listening on port: ${port}`);
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+app.use(morgan("tiny"));
+// Usa el router
+app.use("/api", beastsRouter);
+
+app.listen(PORT, () => {
+    console.log(`Servidor ejecutándose en http://localhost:${PORT}`);
 });
